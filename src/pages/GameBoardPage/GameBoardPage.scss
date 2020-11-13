@@ -1,0 +1,98 @@
+.game {
+  &_inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  &_options {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+
+    &_selector,
+    &_input,
+    &_btn {
+      background: aliceblue;
+      border-radius: 5px;
+      border: none;
+      max-height: 35px;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 5px;
+      color: #96A4A9;
+    }
+
+    &_selector {
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+      background: #CFD8DC;
+
+      &_opt {
+        position: absolute;
+        top: 40px;
+      }
+
+      &_el {
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px;
+        background: #CFD8DC;
+
+        &:first-child {
+          margin-top: 5px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &_input {
+      background: #F3F3F3;
+      margin-left: 25px;
+    }
+
+    &_btn {
+      background: #7B8C93;
+      color: #FFF;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-left: 25px;
+
+      &:last-child {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &_msg {
+    margin-top: 40px;
+    text-align: center;
+    &>span {
+      text-transform: uppercase;
+    }
+  }
+
+  &_square {
+    width: fit-content;
+    margin: 40px auto 0;
+    display: grid;
+
+    &_cell {
+      height: 50px;
+      width: 50px;
+      font-size: 2em;
+      border: 1px solid #dddddd;
+      cursor: pointer;
+    }
+  }
+}

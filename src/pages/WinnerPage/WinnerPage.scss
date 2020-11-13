@@ -1,0 +1,28 @@
+.winners {
+  &_inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &_list {
+    padding: 0;
+
+    &_el {
+      background: #CFD8DC;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &>p {
+        margin: 0;
+      }
+    }
+  }
+}
